@@ -1,61 +1,107 @@
-:root{
-    --vermelha: #E50914;
-    --preta: #141414;
+:root {
+  --vermelha: #e50914;
+  --preta: #141414;
 }
 
 /* Base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+  background: var(--preta);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 }
 
 header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 70px;
 }
 
 header .logo {
-    color: var(--vermelha);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;;
-    margin-left: 5px;
+  color: var(--vermelha);
+  font-family: "Arial Black", Times;
+  font-size: 20px;
+  margin: 40px 40px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-header nav a:hover{
-    color:#fff;
+header nav a:hover {
+  color: #fff;
 }
 
 /* Filme principal */
-.filme-principal{
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/TheItCrowdCapa.jpg');
-    height: 400px;
-    background-size: cover;
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/TheItCrowdCapa.jpg");
+  height: 700px;
+  background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.filme-principal .descricao{
-    margin-bottom: 40px;
+.filme-principal .descricao {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
-.titulo {
-    font-size: 40px;
-    margin-bottom: 20px;
+
+.filme-principal .titulo {
+    margin-top: 15%;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.botao-assistir {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 12px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.botao-assistir:hover{
+    background-color: rgba(235, 235, 235, 0.7);
+}
+
+.botao-informacoes {
+    background-color: rgba(109,109,110,0.7) ;
+    border: none;
+    color: white;
+
+    padding: 12px 40px;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all
+}
+.botao-informacoes:hover{
+    background-color: rgba(109,109,110,0.5);
+}
+
+button i {
+    margin-right: 10px
+}
+
+.texto-descricao {
+  width: 50%;
+  padding: 5px;
+  margin: 20px;
 }
